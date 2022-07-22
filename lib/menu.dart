@@ -18,10 +18,8 @@ class Menu extends StatelessWidget {
               children: [
                 ListTile(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const AdminPage()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => AdminPage()));
                   },
                   title: const Text('Sqlite'),
                   tileColor: Colors.amber,

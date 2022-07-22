@@ -3,11 +3,11 @@ const String tableUsers = 'users';
 const List<String> userColumns = ['id', 'full_name', 'created_time'];
 
 class User {
-  final int id;
+  final int? id;
   final String fullName;
   final DateTime createdTime;
 
-  User(this.id, this.fullName, this.createdTime);
+  User({this.id, required this.fullName, required this.createdTime});
 
   User.fromJson(Map<String, dynamic> json)
       : id = json['id'],
