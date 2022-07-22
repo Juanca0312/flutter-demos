@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter_demos/sqlite/models/user.dart';
-import 'package:flutter_demos/sqlite/models/user.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
