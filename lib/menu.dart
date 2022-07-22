@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demos/sqlite/pages/admin_page.dart';
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
@@ -16,7 +17,12 @@ class Menu extends StatelessWidget {
             child: Column(
               children: [
                 ListTile(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const AdminPage()));
+                  },
                   title: const Text('Sqlite'),
                   tileColor: Colors.amber,
                   shape: RoundedRectangleBorder(
